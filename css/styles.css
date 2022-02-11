@@ -27,5 +27,11 @@ body {
   width: 50px;
   height: 50px;
   margin: 5px;
-  background: turquoise;
+  background: rgb(79, 134, 129);
+}
+
+.title {
+  color: tomato;
+  font-size: 60px;
+  text-shadow: 2px 2px 20px #ff0000, 5px 5px 5px #000000;
 }
