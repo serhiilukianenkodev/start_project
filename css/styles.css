@@ -56,6 +56,6 @@ body {
   border-bottom: 3px solid #000;
 }
 
-.sel-item:nth-child(2n-1) {
+.sel-item:nth-child(-n + 2) {
   color: #ff0000;
 }
