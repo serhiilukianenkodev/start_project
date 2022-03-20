@@ -6,6 +6,49 @@ body {
   color: brown;
 }
 
+.keyframe-elements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 400px;
+  margin: 50px auto;
+  background-color: darkorange;
+}
+
+.keyframe-elements > .ball {
+  /* animation: power 3000ms linear infinite; */
+
+  width: 100px;
+  height: 100px;
+  background-color: #f534ee;
+  font-size: 50px;
+
+  /* border-radius: 50%; */
+}
+
+.keyframe-elements > .ball:hover {
+  transition: transform 1000ms linear;
+  transform-origin: top;
+
+  transform: scale(-1);
+}
+
+@keyframes power {
+  0% {
+    transform: translate(0, 100px);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(100px, 0);
+    opacity: 0.1;
+  }
+  100% {
+    transform: translate(0, 100px);
+    opacity: 1;
+  }
+}
+
 .container {
   width: 960px;
   padding-left: 15px;
